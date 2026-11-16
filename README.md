@@ -18,11 +18,12 @@ Sin su trabajo, este juego no se podría leer en ningún idioma occidental. Si t
 En [Releases](../../releases), el fichero `Athena_ES_v0.9.0.zip`.
 
 ### Cómo se aplica
-Hacen falta los tres discos japoneses (SLPM-86185, 86186 y 86187), cada uno en una sola imagen `.bin` con todas sus pistas unidas, igual que pide el parche inglés.
-- `desde_japones`: se aplica sobre la imagen japonesa original. Es un solo paso y no hace falta el parche inglés.
-- `desde_ingles`: se aplica sobre la imagen ya parcheada con el inglés 1.0.0 de Plissken.
+Hacen falta los tres discos japoneses (SLPM-86185, 86186 y 86187). El zip trae tres juegos de parches; usa el de tus imágenes:
+- `por_pistas`: para volcados con las pistas separadas (Redump), lo más habitual. Se parchea la pista 1 de cada disco; la pista 2 de los discos 2 y 3 no cambia y el `.cue` sirve tal cual.
+- `pistas_unidas`: para la imagen japonesa con todas las pistas unidas en un solo `.bin`, como pide el parche inglés.
+- `desde_ingles`: para la imagen ya parcheada con el inglés 1.0.0 de Plissken.
 
-Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s disco_original.bin athena_es_cdN.xdelta disco_es.bin`. El `LEEME.txt` trae las sumas MD5 de cada imagen.
+Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s original.bin parche.xdelta traducido.bin`. El `LEEME.txt` trae las sumas MD5 de cada imagen.
 
 ### Qué queda en inglés
 Lo que son imágenes: el menú del título, el menú de pausa (MAP, ITEMS, ESP), los menús de ESP y de objetos, los mapas, las pantallas de guardar y cargar y el aviso de cambio de disco.
