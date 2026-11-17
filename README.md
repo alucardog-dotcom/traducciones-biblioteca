@@ -57,3 +57,25 @@ Los gráficos que el juego japonés ya traía en inglés: el logotipo, «Daughte
 
 ### Licencia
 La traducción inglesa y las herramientas de minhnhattonthat son MIT; su aviso va en el `LICENCIA.txt` del zip. La traducción al español se publica con la misma licencia.
+
+## Castlevania: Rondo of Blood (PC Engine CD, 1993)
+
+Traducción al español del Castlevania de PC Engine (*Akumajō Dracula X: Chi no Rondo*). La historia va en escenas habladas que en el original japonés no tienen texto: esta traducción les añade **subtítulos en español** sincronizados con las voces, y también a las dos frases que dice la Muerte en la pelea de la carreta del nivel 0, mientras se juega. Traduce además el prólogo, los rótulos de entrada de los niveles, los nombres de nivel del mapa y del SOUND TEST, los mensajes de guardado, el barquero y el mercader, y el reparto de los créditos, con una fuente nueva con tildes y eñes.
+
+**Traducción al español:** Biblioteca de traducciones, hecha con ayuda de inteligencia artificial. Las voces se transcribieron con reconocimiento de voz y se revisaron; los nombres siguen la traducción oficial inglesa de Konami (Richter Belmont, Maria Renard, Annette, Tera, Iris, Shaft, conde Drácula).
+
+### Descarga
+En [Releases](../../releases), el fichero `Rondo_of_Blood_ES_v0.9.0.zip`.
+
+### Cómo se aplica
+Hace falta el disco japonés con las pistas separadas (Redump o TOSEC: `Track 02.bin`, CRC32 42A597B1). El parche solo cambia la pista 2, la de datos; las de audio y el `.cue` sirven tal cual. Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s "Track 02.bin" Rondo_of_Blood_ES.xdelta "Track 02 (ES).bin"`, y luego se pone la pista parcheada en lugar de la original. Hace falta la System Card 3.0 (Super CD-ROM²). El `LEEME.txt` trae las sumas de comprobación.
+
+### Qué queda sin traducir
+- Las voces, que siguen en japonés (con subtítulos).
+- Los menús que el juego ya traía en inglés (PLAYER, NAME ENTRY, GAME START, TECHNIC, STAGE…).
+- La frase que dice la Muerte al aparecer en el nivel 5.
+
+### Problemas conocidos
+- Cuando abajo hay figuras de la escena, el subtítulo va arriba o a un lado; si no cabe en dos líneas, sale en dos partes seguidas.
+- Mientras se ve una frase de la Muerte en el nivel 0, a veces faltan unas gotas de lluvia: el juego usa casi todos los sprites de la consola.
+- Es la versión 0.9.0: probada en emulador (las diez escenas comparadas fotograma a fotograma con el juego original y la pelea de la Muerte jugada a la vez con el disco original), pero no jugada de principio a fin. Si encuentras un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
