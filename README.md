@@ -32,3 +32,28 @@ Lo que son imágenes: el menú del título, el menú de pausa (MAP, ITEMS, ESP),
 - En DuckStation, el juego se cuelga con «PGXP Geometry Correction» activado. Le pasa también al original y lo avisa Plissken.
 - Cada frase en español va en el hueco exacto de la inglesa, así que algunas son más escuetas de lo ideal.
 - Es la versión 0.9.0: se ha probado el principio de cada disco, pero no se ha jugado de principio a fin. Si encuentras una frase rara o un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
+
+## Boundary Gate: Daughter of Kingdom (PlayStation, 1997)
+
+Traducción completa al español del RPG de Pack-In-Video y Victor Interactive Software: diálogos y eventos, menús, objetos, hechizos, monstruos, combate, tiendas, guardado, el prólogo, el final y los créditos, con tildes, eñes y signos de apertura.
+
+**Traducción al español:** Biblioteca de traducciones, hecha con ayuda de inteligencia artificial. Incluye las tildes, eñes y signos de apertura añadidos a la fuente del juego.
+
+**Agradecimientos.** Esta traducción parte de la traducción inglesa de [minhnhattonthat](https://github.com/minhnhattonthat/boundary-gate-daughter-of-kingdom-en), que publica su trabajo y sus herramientas con licencia MIT. Sin su trabajo, este juego no se podría leer en ningún idioma occidental. Si te gusta, pásate por su repositorio.
+
+### Descarga
+En [Releases](../../releases), el fichero `Boundary_Gate_Daughter_of_Kingdom_ES_v0.9.0.zip`.
+
+### Cómo se aplica
+Hace falta el disco japonés en formato Redump (90 pistas: la 1 de datos y el resto de audio). El parche solo cambia la pista 1; las demás y el `.cue` sirven tal cual. Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s "Boundary Gate - Daughter of Kingdom (Japan) (Track 01).bin" parche.xdelta Pista01_ES.bin`, y luego se pone la pista parcheada en lugar de la original, con el mismo nombre. El `LEEME.txt` trae las sumas de comprobación.
+
+### Qué queda en inglés
+Los gráficos que el juego japonés ya traía en inglés: el logotipo, «Daughter of Kingdom», «PUSH START BUTTON», «Game Over» y el «END» de los créditos. Las voces siguen en japonés.
+
+### Problemas conocidos
+- El español es más largo que el japonés: algunas frases ocupan una página más que en el original.
+- En la pantalla de tarjetas de memoria de la BIOS, los nombres de lugar con tilde salen con signos raros (la BIOS solo lee japonés). Dentro del juego se ven bien.
+- Es la versión 0.9.0: se ha probado en emulador (todos los eventos, menús, tiendas, posada, guardado, combates y el final), pero no se ha jugado de principio a fin. Si encuentras una frase rara o un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
+
+### Licencia
+La traducción inglesa y las herramientas de minhnhattonthat son MIT; su aviso va en el `LICENCIA.txt` del zip. La traducción al español se publica con la misma licencia.
