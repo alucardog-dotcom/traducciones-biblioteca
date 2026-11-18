@@ -68,7 +68,17 @@ Traducción al español del Castlevania de PC Engine (*Akumajō Dracula X: Chi n
 En [Releases](../../releases), el fichero `Rondo_of_Blood_ES_v0.9.0.zip`.
 
 ### Cómo se aplica
-Hace falta el disco japonés con las pistas separadas (Redump o TOSEC: `Track 02.bin`, CRC32 42A597B1). El parche solo cambia la pista 2, la de datos; las de audio y el `.cue` sirven tal cual. Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s "Track 02.bin" Rondo_of_Blood_ES.xdelta "Track 02 (ES).bin"`, y luego se pone la pista parcheada en lugar de la original. Hace falta la System Card 3.0 (Super CD-ROM²). El `LEEME.txt` trae las sumas de comprobación.
+Hace falta el disco japonés y la System Card 3.0 (Super CD-ROM²). El zip trae el parche para los volcados que circulan: guardan el mismo juego con distinto relleno, y por eso su CRC32 no coincide. Usa la carpeta de tu fichero:
+
+| Carpeta | Tu fichero | CRC32 |
+|---|---|---|
+| `por_pistas_redump` | Redump con pistas sueltas: la pista 2 (`Track 02.bin`) | C681F9DA |
+| `por_pistas_tosec` | TOSEC o TruRip con pistas sueltas: la pista 2 | 42A597B1 |
+| `imagen_unica_redump` | Redump en un solo `.bin` (lo que saca `chdman extractcd` de un `.chd`) | E00AC0E2 |
+| `imagen_unica_tosec` | TOSEC o TruRip en un solo `.img` o `.bin` | A62E216F |
+| `iso_wav` | «ISO + WAV»: la pista de datos `.iso` | E91084DA |
+
+Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s "tu fichero" carpeta/Rondo_of_Blood_ES.xdelta "fichero en español"`, y luego se pone el fichero parcheado en lugar del original. Las pistas de audio no cambian. El `LEEME.txt` trae las sumas de comprobación.
 
 ### Qué queda sin traducir
 - Las voces, que siguen en japonés (con subtítulos).
