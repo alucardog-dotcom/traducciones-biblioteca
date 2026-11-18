@@ -60,12 +60,14 @@ La traducción inglesa y las herramientas de minhnhattonthat son MIT; su aviso v
 
 ## Castlevania: Rondo of Blood (PC Engine CD, 1993)
 
-Traducción al español del Castlevania de PC Engine (*Akumajō Dracula X: Chi no Rondo*). La historia va en escenas habladas que en el original japonés no tienen texto: esta traducción les añade **subtítulos en español** sincronizados con las voces, y también a las dos frases que dice la Muerte en la pelea de la carreta del nivel 0, mientras se juega. Traduce además el prólogo, los rótulos de entrada de los niveles, los nombres de nivel del mapa y del SOUND TEST, los mensajes de guardado, el barquero y el mercader, y el reparto de los créditos, con una fuente nueva con tildes y eñes.
+Traducción al español del Castlevania de PC Engine (*Akumajō Dracula X: Chi no Rondo*). La historia va en escenas habladas que en el original japonés no tienen texto: esta traducción les añade **subtítulos en español** sincronizados con las voces, y también a las frases que dice la Muerte mientras se juega: las dos de la pelea de la carreta del nivel 0 y la que suelta al aparecer en el barco del nivel 5, con Richter y con Maria. Traduce además el prólogo, los rótulos de entrada de los niveles, los nombres de nivel del mapa y del SOUND TEST, los mensajes de guardado, el barquero y el mercader, y el reparto de los créditos, con una fuente nueva con tildes y eñes.
 
 **Traducción al español:** Biblioteca de traducciones, hecha con ayuda de inteligencia artificial. Las voces se transcribieron con reconocimiento de voz y se revisaron; los nombres siguen la traducción oficial inglesa de Konami (Richter Belmont, Maria Renard, Annette, Tera, Iris, Shaft, conde Drácula).
 
 ### Descarga
-En [Releases](../../releases), el fichero `Rondo_of_Blood_ES_v0.9.0.zip`.
+En [Releases](../../releases), el fichero `Rondo_of_Blood_ES_v0.9.1.zip`.
+
+**Versión 0.9.1 (18-11-2026):** subtitula la frase de la Muerte del nivel 5, que faltaba, y el parche ya no le quita tiempo al juego: sin subtítulo en pantalla, el juego corre con su código original, y con una frase a la vista el subtitulado gasta lo mismo que le ahorra al juego (en la 0.9.0, en los jefes, podía perder algún fotograma más que el original). El parche se aplica siempre al fichero original, no sobre la 0.9.0.
 
 ### Cómo se aplica
 Hace falta el disco japonés y la System Card 3.0 (Super CD-ROM²). El zip trae el parche para los volcados que circulan: guardan el mismo juego con distinto relleno, y por eso su CRC32 no coincide. Usa la carpeta de tu fichero:
@@ -83,9 +85,8 @@ Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s "tu fichero" ca
 ### Qué queda sin traducir
 - Las voces, que siguen en japonés (con subtítulos).
 - Los menús que el juego ya traía en inglés (PLAYER, NAME ENTRY, GAME START, TECHNIC, STAGE…).
-- La frase que dice la Muerte al aparecer en el nivel 5.
 
 ### Problemas conocidos
 - Cuando abajo hay figuras de la escena, el subtítulo va arriba o a un lado; si no cabe en dos líneas, sale en dos partes seguidas.
-- Mientras se ve una frase de la Muerte en el nivel 0, a veces faltan unas gotas de lluvia: el juego usa casi todos los sprites de la consola.
-- Es la versión 0.9.0: probada en emulador (las diez escenas comparadas fotograma a fotograma con el juego original y la pelea de la Muerte jugada a la vez con el disco original), pero no jugada de principio a fin. Si encuentras un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
+- Los subtítulos de las frases de los niveles son sprites, y la consola solo admite 64 a la vez: en algún fotograma suelto en que el juego los usa casi todos puede faltar uno de los suyos (unas gotas de lluvia en el nivel 0).
+- Es la versión 0.9.1: probada en emulador (las diez escenas comparadas fotograma a fotograma con el juego original, y las peleas con la Muerte de los niveles 0 y 5 jugadas a la vez con el disco original, con Richter y con Maria), pero no jugada de principio a fin. Si encuentras un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
