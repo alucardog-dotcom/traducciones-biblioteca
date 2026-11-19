@@ -90,3 +90,27 @@ Se puede aplicar con Delta Patcher o con xdelta3: `xdelta3 -d -s "tu fichero" ca
 - Cuando abajo hay figuras de la escena, el subtítulo va arriba o a un lado; si no cabe en dos líneas, sale en dos partes seguidas.
 - Los subtítulos de las frases de los niveles son sprites, y la consola solo admite 64 a la vez: en algún fotograma suelto en que el juego los usa casi todos puede faltar uno de los suyos (unas gotas de lluvia en el nivel 0).
 - Es la versión 0.9.1: probada en emulador (las diez escenas comparadas fotograma a fotograma con el juego original, y las peleas con la Muerte de los niveles 0 y 5 jugadas a la vez con el disco original, con Richter y con Maria), pero no jugada de principio a fin. Si encuentras un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
+
+## Legend of Kartia (PlayStation, 1998)
+
+Traducción completa al español del juego de rol táctico de Atlus: las escenas de las dos historias (Toxa y Lacryma), los combates, la Arena, las narraciones de los capítulos, los resúmenes, el prólogo, los menús, los objetos, las armas, las magias, los Fantasmas, las kartias, el guardado y el modo de entrenamiento.
+
+**Traducción al español:** Biblioteca de traducciones, hecha con ayuda de inteligencia artificial a partir del texto inglés oficial. Incluye las tildes, eñes y signos de apertura añadidos a la fuente del juego. El español ocupa el lugar del francés: en la pantalla de idiomas sale la bandera de España; el inglés y el alemán siguen intactos.
+
+### Descarga
+En [Releases](../../releases), el fichero `Legend_of_Kartia_ES_v0.9.0.zip` (parche xdelta). Aparte, en la release `kartia-es-v0.9.0-ppf`, el mismo parche en formato PPF (`Legend_of_Kartia_ES_v0.9.0_PPF.zip`), para PPF-O-Matic y para volcados que no son idénticos al de Redump.
+
+### Cómo se aplica
+Hace falta la edición europea (SLES-01710) en formato Redump, de una sola pista: `Legend of Kartia (Europe) (En,Fr,De).bin`, CRC32 0BA490B8. La americana (*Kartia: The Word of Fate*) no sirve.
+- **Con la app de la Biblioteca:** acepta el juego en `.cue`/`.bin`, `.chd`, `.zip` o `.7z` y deja al lado un `.chd` traducido.
+- **`.cue` y `.bin`:** Delta Patcher, Rom Patcher JS o xdelta3 (`xdelta3 -d -s "Legend of Kartia (Europe) (En,Fr,De).bin" Legend_of_Kartia_ES_v0.9.0.xdelta "Legend of Kartia (Español).bin"`), y se abre con el `.cue` que va en el zip.
+- **`.chd`:** sin la app, se pasa antes a `.cue`/`.bin` con `chdman extractcd`.
+
+En el juego, elige la bandera de España. El `LEEME.txt` explica cada caso y trae las sumas de comprobación.
+
+### Qué queda en inglés
+Los gráficos que la versión francesa ya traía en inglés: el menú del título (Start, Continue…), «Turn», «Phantom», «Weapon», «Gear», «Mix», «Ok», «Silk», «Mithril», «World Tree», los rótulos del mapa del mundo, los de capítulo y «KARTIA the Record of Fate».
+
+### Problemas conocidos
+- Es la versión 0.9.0: se ha probado en emulador (el comienzo de las dos historias y sus primeros combates, menús, creación de Fantasmas y armas, guardado), pero no se ha jugado de principio a fin. Si encuentras una frase rara o un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
+- La fuente pequeña de algunos datos de estado solo tiene la «á» como letra acentuada nueva, por eso se abrevia alguna palabra («Cap.»).
