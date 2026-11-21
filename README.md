@@ -122,7 +122,7 @@ Traducción completa al español del *dungeon crawler* de Acquire: eventos y di�
 **Traducción al español:** Biblioteca de traducciones, hecha con ayuda de inteligencia artificial a partir del texto inglés oficial de XSEED Games.
 
 ### Descarga
-En [Releases](../../releases), el fichero `Wizardry_LoLS_ES_v0.9.0.zip`.
+En [Releases](../../releases), el fichero `Wizardry_LoLS_ES_v0.9.1.zip` (la 0.9.1 arregla textos que no cabían en su recuadro; se instala encima de la 0.9.0).
 
 ### Cómo se aplica
 Hace falta la versión de Steam (AppID 948640) sin modificar. Descomprime el zip, cierra el juego y haz doble clic en `Instalar_traduccion.bat`: encuentra solo la carpeta del juego, comprueba los ficheros, añade la traducción al final de `labyrinth.dat` y cambia unas pocas cadenas de `LoLS_win32.exe` (guarda una copia del original). Para quitarla, `Desinstalar_traduccion.bat` o «Verificar la integridad de los archivos» en Steam. En Linux y Steam Deck, los dos parches xdelta de la carpeta `xdelta` dan los mismos ficheros; el `LEEME.txt` trae las órdenes y las sumas SHA-1.
@@ -133,4 +133,4 @@ El logotipo del título, los créditos finales y lo que el juego trae dibujado (
 ### Problemas conocidos
 - Si Steam actualiza o verifica el juego, la traducción se quita: hay que volver a instalarla.
 - Los recuadros están hechos a la medida del inglés, así que algunos nombres van abreviados en las listas («Perg. de salto»).
-- Es la versión 0.9.0: se ha probado en el juego, pero no se ha jugado de principio a fin. Si encuentras una frase rara, un texto que se sale de su recuadro o un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
+- Es la versión 0.9.1: se ha probado en el juego, pero no se ha jugado de principio a fin. Si encuentras una frase rara, un texto que se sale de su recuadro o un fallo, abre un *issue* o escribe a contacto@bibliotecadetraducciones.com.
